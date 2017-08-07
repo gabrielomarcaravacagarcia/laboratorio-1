@@ -95,6 +95,11 @@ public class Taller1 extends javax.swing.JFrame {
         btnAlquilar.setText("Alquilarr");
 
         btncomprar.setText("Comprar");
+        btncomprar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncomprarActionPerformed(evt);
+            }
+        });
 
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { " " };
@@ -235,8 +240,13 @@ public class Taller1 extends javax.swing.JFrame {
         listaLibros.add(sacar);
         listaLibros.sort(null);
        Libros.addElement(listaLibros);
+       
         
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btncomprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncomprarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btncomprarActionPerformed
 
     public static void main(String args[]) {
 
